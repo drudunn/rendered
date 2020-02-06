@@ -17,7 +17,8 @@ Runs the app in development mode on port `3000`
 
 Builds the app for production
 
-### `start`
+### `start`
+
 Runs the app in production mode on port `3000`
 
 ## Deployment
