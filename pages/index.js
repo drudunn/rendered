@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Footer from '../components/footer/Footer';
 import Illustrations from '../components/hero/Illustrations';
+import Section from '../components/feature/Section';
 
 const Title = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
@@ -8,6 +9,7 @@ const Title = styled.h1`
   margin-top: 2rem;
 
   @media (min-width: ${({ theme }) => theme.breakpoints.small}) {
+    margin-top: 3rem;
     font-size: 5rem;
   }
 `;
@@ -15,23 +17,6 @@ const Title = styled.h1`
 const Hero = styled.section`
   text-align: center;
   margin-bottom: 4rem;
-`;
-
-const Feature = styled.section`
-  background: ${({ background, theme }) =>
-    background ? theme.colors.background : 'none'};
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  padding: 2rem 1rem;
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.small}) {
-    padding: 3rem 2rem;
-  }
-`;
-
-const Container = styled.div`
-  max-width: ${({ theme }) => theme.maxWidth};
-  margin: 0 auto;
 `;
 
 const Homepage = () => (
@@ -42,11 +27,7 @@ const Homepage = () => (
         <h2>We specialise in improving brands online.</h2>
       </Hero>
       <Illustrations />
-      <Feature background>
-        <Container>
-          <p>We offer Design, Development and Video services.</p>
-        </Container>
-      </Feature>
+      <Section />
     </main>
     <Footer />
   </>
