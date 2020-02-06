@@ -4,6 +4,7 @@ const Wrapper = styled.section`
   margin: 0 auto;
   width: 75%;
   margin-bottom: 5rem;
+  position: relative;
 `;
 
 const Woman = styled.img`
@@ -11,15 +12,20 @@ const Woman = styled.img`
   z-index: 1;
 `;
 
-const Profile = styled.img`
+const Profile = styled.div`
   position: absolute;
-  margin-left: -2.5rem;
+  left: 46%;
+  top: 0%;
+  width: 52vw;
+  overflow: hidden;
 `;
 
 const Illustrations = () => (
   <Wrapper>
     <Woman src="/illustrations/woman-phone.svg" />
-    <Profile src="/illustrations/profile.svg" />
+    <Profile>
+      <img src="/illustrations/profile.svg" />
+    </Profile>
   </Wrapper>
 );
 
