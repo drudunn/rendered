@@ -8,20 +8,25 @@ const Wrapper = styled.footer`
 const Container = styled.section`
   max-width: ${({ theme }) => theme.maxWidth};
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
+  p {
+    font-size: 0.75rem;
+    margin: 0;
+  }
+
   @media (min-width: ${({ theme }) => theme.breakpoints.small}) {
-    padding: 2rem;
+    padding: 3rem 0;
   }
 `;
 
 const Footer = () => (
   <Wrapper>
     <Container>
-      <p>Rendered Ltd {new Date().getFullYear()}</p>
+      <p>Rendered Ltd &copy; {new Date().getFullYear()}</p>
       <p>Made with 💛in London</p>
     </Container>
   </Wrapper>
