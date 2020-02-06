@@ -1,6 +1,12 @@
 const theme = {
   colors: {
-    primary: '#0070f3'
+    primary: '#101010'
+  },
+  maxWidth: '600px',
+  breakpoints: {
+    small: '400px',
+    medium: '800px',
+    large: '1200px'
   }
 };
 
