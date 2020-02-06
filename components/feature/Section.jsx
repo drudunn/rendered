@@ -15,18 +15,40 @@ const Feature = styled.section`
 const Container = styled.div`
   max-width: ${({ theme }) => theme.maxWidth};
   margin: 0 auto;
+  text-align: ${props => (props.centered ? 'center' : 'left')};
 `;
 
-const CenteredTitle = styled.h3`
-  text-align: center;
+const Link = styled.a`
+  background: ${({ theme }) => theme.colors.primary};
+  color: white;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin: 2rem auto;
+  display: block;
+  text-decoration: none;
+`;
+
+const Blurb = styled.p`
+  max-width: 360px;
+  margin: 0 auto;
 `;
 
 const Section = () => (
   <Feature background>
-    <Container>
-      <CenteredTitle>
-        We offer Design, Development and Video services
-      </CenteredTitle>
+    <Container centered>
+      <h3>Talk to us</h3>
+      <Blurb>
+        We offer Design, Development and Video services. Get in touch with us to
+        discuss your project
+      </Blurb>
+      <Link
+        href="https://rendered.typeform.com/to/k1cxma"
+        target="_blank"
+        rel="noopener"
+      >
+        Contact us
+      </Link>
     </Container>
   </Feature>
 );
