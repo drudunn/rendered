@@ -18,7 +18,7 @@ const Container = styled.section`
     margin: 0;
   }
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.small}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.medium}) {
     padding: 3rem 0;
   }
 `;
