@@ -27,13 +27,17 @@ const GlobalStyles = createGlobalStyle`
     margin: 0 0 1.5rem;
   }
 
+  p {
+    margin-top: 0;
+  }
+
   main {
     max-width: ${theme.maxWidth};
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 0 1rem;
 
     @media (min-width: ${theme.breakpoints.small}) {
-      padding: 2rem;
+      padding: 0 2rem;
     }
   }
 `;
