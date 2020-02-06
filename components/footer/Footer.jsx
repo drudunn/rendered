@@ -14,7 +14,7 @@ const Container = styled.section`
   justify-content: space-between;
 
   p {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     margin: 0;
   }
 
