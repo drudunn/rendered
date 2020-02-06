@@ -27,7 +27,7 @@ const Footer = () => (
   <Wrapper>
     <Container>
       <p>Rendered Ltd &copy; {new Date().getFullYear()}</p>
-      <p>Made with 💛in London</p>
+      <p>Made with 💛 in London</p>
     </Container>
   </Wrapper>
 );
