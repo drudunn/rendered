@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import styled from 'styled-components';
 import Footer from '../components/footer/Footer';
 import Illustrations from '../components/hero/Illustrations';
@@ -21,6 +22,10 @@ const Hero = styled.section`
 
 const Homepage = () => (
   <>
+    <Head>
+      <title>Rendered – We specialise in improving brands online.</title>
+      <meta name="description" content="We offer Design, Development and Video services. Get in touch with us todiscuss your project." />
+    </Head>
     <main>
       <Hero>
         <Title>Rendered</Title>
