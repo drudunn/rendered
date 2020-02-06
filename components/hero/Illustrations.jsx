@@ -10,14 +10,27 @@ const Wrapper = styled.section`
 const Woman = styled.img`
   position: relative;
   z-index: 1;
+  @media (min-width: ${({ theme }) => theme.breakpoints.small}) {
+    left: 2rem;
+  }
 `;
 
 const Profile = styled.div`
   position: absolute;
-  left: 46%;
+  left: calc(50% - 0px);
   top: 0%;
-  width: 52vw;
+  width: 50vw;
   overflow: hidden;
+  transition: left .5s ease;
+  transition: width .25s ease;
+
+  @media (min-width: 500px) {
+    left: calc(50% - 1rem);
+  }
+
+  @media (min-width: 600px) {
+    left: calc(50% - 2rem);
+  }
 `;
 
 const Illustrations = () => (
