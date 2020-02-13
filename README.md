@@ -1,6 +1,6 @@
-# Rendered LTD
+# Rendered
 
-Marketing and portfolio site for Rendered Ltd.
+Marketing and portfolio site for Rendered.
 
 ## Made with
 
@@ -23,4 +23,4 @@ Runs the app in production mode on port `3000`
 
 ## Deployment
 
-This is hosted using [now](https://zeit.co/now). The repo is setup to auto-deploy for PRs and when master updates.
+This is hosted using [now](https://zeit.co/now). The repo is setup to auto-deploy for [PRs](https://github.com/drudunn/rendered/pulls) and when master updates.
